@@ -3,7 +3,7 @@ function submit() {
   const password = document.getElementById('passwordLogin').value;
 
   if (email === "admin" && password === "admin123") {
-    window.location.href = "../admin/admin.html";   
+    window.location.href = "admin.html";   
     return;  
   }
 
@@ -14,7 +14,7 @@ function submit() {
     // Aqui você armazena o usuário logado no localStorage
     localStorage.setItem('usuarioLogado', JSON.stringify(user));
     
-    window.location.href = "../inicio/index.html"; 
+    window.location.href = "index.html"; 
   } else {
     openModalError(); 
     return;
@@ -40,5 +40,5 @@ function retorne() {
 }
 
 function register(){
-  window.location.href = "../cadastro/cadastro.html"; 
+  window.location.href = "cadastro.html"; 
 }
