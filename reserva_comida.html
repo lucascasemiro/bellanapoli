@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva</title>
+    <link rel="stylesheet" href="reserva_comida.css">
+</head>
+
+<body>
+    <div class="success" id="success">
+        <div class="texto1" id="textoum">Reserva Concluída</div>
+        <div class="texto2" id="textodois">Sua reserva será cadastrada pelo sistema.</div>
+    </div>
+    
+    <div class="pedido-container" id="pedidocontainer" >
+        <div class="pedido-content">
+            <div class="pedidos">Seu Pedido</div>
+            <div class="mesa-dia">
+</div>
+
+<div class="itemstext"></div>
+<div class="ositemdebaixo">
+    <div class="total-textc">Total:</div>
+    <div class="totalnumc">R$ 0.00</div>
+    <div class="cancelar" onclick="closeBookingInfo()">Cancelar</div>
+    <div class="pedir"onclick="bookingSuccess()">Pedir</div>
+</div>
+</div>
+</div>
+<div class="overlay" id="overlay"></div>
+
+    <div class="carrinho-container" id="carrinhocontainer">
+        <div class="total-cont">
+            <div class="total-text">Total:</div>
+            <div class="totalnum"><span>R$</span>0.00</div>
+        </div>
+        <div class="confirmar" onclick="getBookingInfo()">Continuar</div>
+    </div>
+    <div class="container">
+        <div class="content">
+            <div class="back-button" onclick="back()">
+                <div class="arrow" onclick="back()">
+                </div>
+            </div>
+            <div class="top">
+                <div class="title">
+                    <h3>Reserva</h3>
+                </div>
+                <div class="subtitle">
+                    <label>Por último, desfrute dos pratos do nosso cardápio!</label>
+                </div>
+            </div>
+            <div class="below">
+
+                <div class="food-group">
+                    <div class="container-items">
+                        <h2>Entradas</h2>
+                        <ul id="entitems" class="entitems">
+
+                        </ul>
+                    </div>
+
+                    <div class="container-items">
+                        <h2>Pizzas Tradicionais</h2>
+                        <ul id="traditems">
+
+                        </ul>
+                    </div>
+
+                    <div class="container-items">
+                        <h2>Pizzas Gourmet</h2>
+                        <ul id="gouritems" id="item">
+
+                        </ul>
+                    </div>
+
+
+                    <div class="container-items">
+                        <h2>Sabores da casa</h2>
+                        <ul id="sabitems">
+
+                        </ul>
+                    </div>
+
+                    <div class="container-items">
+                        <h2>Acompanhamentos</h2>
+                        <ul id="acitems">
+
+                        </ul>
+                    </div>
+
+
+                    <div class="container-items">
+                        <h2>Bebidas</h2>
+                        <ul id="bebitems">
+
+                        </ul>
+                    </div>
+
+                    <textarea spellcheck="false" placeholder="Observação:"></textarea>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="reserva_comida.js"></script>
+</body>
+
+</html>

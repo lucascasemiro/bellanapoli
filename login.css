@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body {
+    background-color: #AC2A42;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+}
+
+.container {
+    display: flex;
+    background-color: #F8F6F3;
+    border-radius: 3vh;
+    width: 70%;
+    height: 85%;
+    user-select: none;
+}
+
+.img {
+    background-color: #5A1F2A;
+    background-image: url(Group\ 3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 3vh;
+    height: 100%;
+    width: 40%;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    height: 100%;
+    width: 60%;
+
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    width: 70%;
+
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10vh;
+    color: #AC2A42;
+    height: 7%;
+    width: 100%;
+
+
+}
+
+.inputs {
+
+    width: 90%;
+    height: 100%;
+    padding-left: 5%;
+}
+
+input {
+    font-family: 'Playfair Display', serif;
+    font-size: 2vh;
+    width: 100%;
+    height: 14%;
+    margin-bottom: 4%;
+    padding-left: 5%;
+    border-radius: 1vh;
+    border: none;
+    outline: none;
+    background-color: #EFE9E7;
+    user-select: all;
+}
+
+.submit-c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+}
+
+.submit {
+    font-size: 2.5vh;
+    font-weight: 700;
+    color: #F8F6F3;
+    background-color: #AC2A42;
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    width: 30%;
+    border-radius: 2vh;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.back-button {
+    background-color: #EFE9E7;
+    border-radius: 50%;
+    width: 6.5vh;
+    height: 6.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    margin-top: 6%;
+margin-left: 78% ;
+
+}
+
+.arrow {
+    width: 2.8vh;
+    height: 2.8vh;
+    display: block;
+    transform: rotateY(180deg);
+}
+
+.forgot {
+    display: flex;
+    justify-content: right;
+    color: #232020;
+    font-size: 1.5vh;
+    cursor: pointer;
+}
+
+.modal-pw{
+    display: none;
+    align-items: center;
+    width: 100%;
+    height: 5%;
+    color: #c53c55;
+    font-size: 1.6vh;
+    background-color: #43b37200;
+    margin-bottom: 1%;
+    margin-top: -2%;
+}

@@ -1,0 +1,66 @@
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crie sua conta</title>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="img">
+            <div class="back-button" onclick="retorne()">
+                <img class="arrow" onclick="retorne()" src="https://i.imgur.com/Ykxn1L4.png">
+            </div>
+
+        </div>
+
+        <div class="content">
+            <div class="data">
+
+                <h2 class="titulo">Crie sua conta</h2>
+
+
+
+                <div class="inputs">
+                    <div class="n-sn">
+                        <input onclick="closeModalname()" class="nome" placeholder="Nome" type="text" id="nome" required autocomplete="off">
+                        <input onclick="closeModalname()" class="sobrenome" placeholder="Sobrenome" type="text" id="sobrenome" required autocomplete="off">
+                    </div>
+                    <div class="modal-pw" id="modalname">
+Você precisa de um nome e sobrenome para concluir o cadastro. Tente novamente
+                    </div>
+                    <div class="modal-pw" id="modalEmail">
+ Você precisa de um Email para concluir o cadastro. Tente novamente
+                    </div>
+                    <input onclick="closeModalEmail()"  class="email" placeholder="Email" type="email" id="email" required autocomplete="off">
+                    <div class="modal-pw" id="modalpass">
+As senhas não correspondem. Tente novamente
+                    </div>
+                    <input onclick="closeModalpass()" class="password" placeholder="Senha" type="password" id="password" required autocomplete="off">
+                    <input onclick="closeModalpass()" class="password" placeholder="Confirme a senha" type="password" id="passwordC" required autocomplete="off">
+                    <div class="modal-pw" id="modalcheck">
+Você precisa aceitar os Termos e Serviços para concluir o cadastro.
+                    </div>
+                    <div onclick="closeModalcheck()" class="checkbox-div">
+                        <input  class="checkbox" type="checkbox" id="checkbox" required>
+                        <label for="checkbox" class="agree-text">Eu concordo com os <a href="#">Termos e Serviços</a>
+                            desse site.</label>
+                        </div>
+                        
+
+                    <div class="submit-c"><button class="submit" id="submit" onclick="submit()">Entrar</button></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="cadastro.js"></script>
+</body>
+
+</html>

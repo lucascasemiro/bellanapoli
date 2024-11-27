@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body {
+    display: block;
+    background-color: #AC2A42;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    height: 400%;
+    user-select: none;
+
+}
+
+header {
+    position: fixed;
+    align-content: center;
+    background-color: #91263a54;
+    height: 100%;
+    width: 12%;
+    display: flex;
+    justify-content: center;
+
+}
+
+nav {
+
+    background-color: #77213100;
+    margin-top: 30%;
+    height: 80%;
+    width: 80%;
+}
+
+li {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 15%;
+    font-size: 3vh;
+    color: #F8F6F3;
+    cursor: pointer;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f6f300;
+    width: 90%;
+    height: 20%;
+    margin: auto;
+    margin-bottom: 60%;
+    background-image: url(Logo.png);
+    background-repeat: no-repeat;
+    background-size:100%;
+}
+
+.container1 {
+    display: flex;
+    background-color: #f8f6f300;
+    width: 100%;
+    height: 100vh;
+}
+
+.content1 {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    background-color: #9e753700;
+    width: 95%;
+    height: 85%;
+    margin-left: 5%;
+}
+
+
+.container3 {
+    display: flex;
+    background-color: #f8f6f300;
+    width: 100%;
+    height: 100vh;
+}
+
+.content3 {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    background-color: #9e753700;
+    width: 90%;
+    height: 85%;
+    margin-left: 5%;
+}
+
+.container4 {
+    display: flex;
+    background-color: #f8f6f300;
+    width: 100%;
+    height: 100vh;
+}
+
+.content4 {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    background-color: #9e753700;
+    width: 90%;
+    height: 85%;
+    margin-left: 5%;
+}
+
+.sections {
+    display: flex;
+    flex-direction: column;
+    background-color: #99815d00;
+    margin-left: 12%;
+    width: 100%;
+
+}
+
+.top-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: #AC2A42;
+    margin-left: 12%;
+    width: 100%;
+    height: 11%;
+    z-index: 200;
+}
+
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+    background-color: #5f513d00;
+    width: 55%;
+    height: 70%;
+    margin-bottom: 3%;
+    margin-top: 5%;
+
+}
+
+.right {
+    display: flex;
+    justify-self: right;
+    align-self: center;
+    background-color: #30291f00;
+    width: 35%;
+    height: 100%;
+    margin-bottom: 8%;
+    margin-left: 10%;
+    background-image: url(Group\ 7.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    background-color: rgba(0, 0, 255, 0);
+    color: #F8F6F3;
+    height: 58%;
+    width: 90%;
+    font-size: 14vh;
+    margin: 0px;
+    font-weight: bold;
+    cursor: default;
+}
+
+label {
+    background-color: rgba(62, 62, 77, 0);
+    height: 20%;
+    width: 90%;
+    font-size: 3vh;
+    margin: 0px;
+    color: #F8F6F3;
+
+}
+
+.buttons {
+    display: flex;
+    justify-self: center;
+    background-color: rgba(73, 73, 80, 0);
+    height: 12%;
+    width: 90%;
+
+}
+
+.book {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8F6F3;
+    height: 90%;
+    width: 30%;
+    margin-right: 5%;
+    border-radius: 2vh;
+    font-size: 2.7vh;
+    color: #AC2A42;
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(52, 52, 88, 0);
+    height: 90%;
+    width: 30%;
+    border-radius: 2vh;
+    font-size: 2.7vh;
+    color: #F8F6F3;
+    cursor: pointer;
+}
+
+h4 {
+    display: flex;
+
+
+}
+
+.top-header-content {
+    display: flex;
+    justify-content: right;
+    align-content: center;
+    background-color: #791e2f00;
+    width: 75%;
+    height: 60%;
+
+}
+#usertag {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f6f300;
+    height: 80%;
+    width: 25%;
+    font-size: 2.7vh;
+    margin-block: 0.5%;
+    cursor: default;
+    color: #F8F6F3;
+}
+
+.quit{
+    display: none;
+    justify-self: center;
+    align-items: center;
+    width: 2%;
+    height: 44%;
+    margin-right: 2%;
+    margin-top: 1.4%;
+    margin-left: 2%;
+    cursor: pointer;
+    background-image: url(quit.png);
+    background-size: cover;
+    background-color: #f8f6f300;
+    background-repeat: no-repeat;
+}
+
+.reg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8F6F3;
+    height: 80%;
+    width: 10%;
+    margin-right: 2%;
+    border-radius: 1.5vh;
+    font-size: 2.7vh;
+    margin-block: 0.5%;
+    cursor: pointer;
+    color: #AC2A42;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f6f300;
+    height: 70%;
+    width: 10%;
+    margin-right: 5%;
+    border-radius: 1.5vh;
+    font-size: 2.7vh;
+    margin-block: 0.5%;
+    cursor: pointer;
+    border: 0.4vh solid #F8F6F3;
+    color: #F8F6F3;
+}
+
+h5 {
+    display: flex;
+
+
+}
+
+.container2 {
+    display: flex;
+    background-color: #f8f6f300;
+    width: 100%;
+    height: 100vh;
+}
+
+.content2 {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    background-color: #9e753700;
+    width: 90%;
+    height: 85%;
+    margin-left: 5%;
+}
+
+.text1 {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+    width: 60%;
+    height: 70%;
+    background-color: rgba(100, 131, 131, 0);
+    margin-top: 2%;
+    color: #F8F6F3;
+}
+
+.frame1 {
+    display: flex;
+    flex-direction: column;
+    justify-self: right;
+    align-self: center;
+    width: 35%;
+    height: 80%;
+    margin-left: 12%;
+    background-image: url(https://www.lacentral.com.br/wp-content/uploads/2023/07/feche-a-pizza-italiana-sobre-o-queijo-cole-o-foco-seletivo-generativo-ai-scaled.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #F8F6F3;
+    border-radius: 5.7% 50.3% 0% 50.3%;
+    transform: rotateY(180deg);
+}
+
+h3 {
+    background-color: rgba(118, 118, 175, 0);
+    height: 25%;
+    width: 90%;
+    font-size: 11vh;
+    margin: 0px;
+    cursor: default;
+    user-select: all;
+}
+
+
+.pgp {
+    margin-top: 10px;
+    font-size: 3vh;
+    width: 80%;
+    text-align: justify;
+    color: #F8F6F3;
+    user-select: all;
+}
+
+
+.text2 {
+    display: flex;
+    flex-direction: column;
+    justify-self: right;
+    align-self: center;
+    width: 60%;
+    height: 70%;
+    background-color: rgba(100, 131, 131, 0);
+    margin-top: 2%;
+    color: #F8F6F3;
+}
+
+.frame2 {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+    width: 35%;
+    height: 80%;
+    background-image: url(https://media01.stockfood.com/largepreviews/MzQ0NTM0MTg2/11114006-Pizza-chef-holding-pizza-in-front-of-oven.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 12%;
+    background-color: #F8F6F3;
+    border-radius: 0% 50.3% 5.7% 50.3%;
+
+}
+
+.chef {
+    background-color: rgba(118, 118, 175, 0);
+    height: 25%;
+    width: 80%;
+    font-size: 11vh;
+    margin: 0px;
+    color: #F8F6F3;
+    cursor: default;
+
+}
+
+
+.pgp2 {
+    margin-top: 10px;
+    font-size: 3vh;
+    width: 80%;
+    text-align: justify;
+    color: #F8F6F3;
+    user-select: all;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+    height: 70%;
+
+    background-color: rgba(128, 255, 0, 0);
+}
+
+.premios {
+    width: 100%;
+    height: 30%;
+    background-color: rgba(102, 145, 59, 0);
+    font-size: 11vh;
+    font-weight: 700;
+    color: #F8F6F3;
+    cursor: default;
+
+}
+
+.frames {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(61, 92, 104, 0);
+    margin-top: 2.8%;
+
+}
+
+.logo1 {
+    display: flex;
+    background-color: #f8f6f300;
+    width: 40%;
+    height: 100%;
+    margin-top: 1%;
+
+    background-image: url(Group\ 14.png);
+    background-repeat: no-repeat;
+    background-size:100%;
+    margin-right: 6%;
+}
+
+.logo2 {
+    display: flex;
+    background-color: #f8f6f300;
+    width: 40%;
+    height: 100%;
+    margin-top: 1%;
+    background-image: url(Group\ 16.png);
+    background-repeat: no-repeat;
+    background-size:100%;
+    margin-right: 6%;
+}
+
+.logo3 {
+    display: flex;
+    justify-self: right;
+    background-color: #f8f6f300;
+    width: 40%;
+    height: 100%;
+    margin-top: 1%;
+    background-image: url(Group\ 15.png);
+    background-repeat: no-repeat;
+    background-size:100%;
+}
+

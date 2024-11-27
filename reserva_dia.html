@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva</title>
+    <link rel="stylesheet" href="reserva_dia.css">
+</head>
+
+<body>
+    <div class="back-button" onclick="voltar()">
+        <div class="arrow" onclick="voltar()">
+        </div>
+    </div>
+    <div class="container">
+
+        <div class="content">
+            <div class="top">
+
+                <div class="title">
+                    <h3>Reserva</h3>
+                </div>
+                <div class="subtitle">
+                    <label>É um prazer agendar sua reserva, Name. Vamos começar.</label>
+                </div>
+
+            </div>
+            <div class="below">
+
+                <div class="name-container">
+                    <div class="horario-cont">
+                        <div class="horario">
+                            <label class="text-hor" for="horarios">Horário:</label>
+                            <select>
+                                <option value="" selected disabled></option>
+                                <option value="10:00">10:00</option>
+                                <option value="11:30">11:30</option>
+                                <option value="13:00">13:00</option>
+                                <option value="18:30">18:30</option>
+                                <option value="20:00">20:00</option>
+                                <option value="21:30">21:30</option>
+                                <option value="23:00">23:00</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="janeiro" class="calendar-container">
+                        <div class="calendario">
+                            <div class="doistextos">
+                                <div class="up">
+                                    <div class="year">2025</div>
+                                </div>
+                                <div class="down">
+                                    <div class="left-arrow" id="leftJan" onclick="switchDec()"></div>
+                                    <div class="month">Janeiro</div>
+                                    <div class="right-arrow" id="rightJan" onclick="switchFeb()"></div>
+                                </div>
+                            </div>
+                            <div  class="cal">
+                                <table>
+                                    <tr>
+                                        <th>Dom</th>
+                                        <th>Seg</th>
+                                        <th>Ter</th>
+                                        <th>Qua</th>
+                                        <th>Qui</th>
+                                        <th>Sex</th>
+                                        <th>Sab</th>
+                                    </tr>
+                                    <tr>
+                                        <td id="empty"></td>
+                                        <td id="empty"></td>
+                                        <td id="um-jan" data-dia="1" data-mes="janeiro">1</td>
+                                        <td id="dois-jan" data-dia="2" data-mes="janeiro">2</td>
+                                        <td id="tres-jan" data-dia="3" data-mes="janeiro">3</td>
+                                        <td id="quatro-jan" data-dia="4" data-mes="janeiro">4</td>
+                                        <td id="cinco-jan" data-dia="5" data-mes="janeiro">5</td>
+                                    </tr>
+                                    <tr>
+                                        <td id="seis-jan" data-dia="6" data-mes="janeiro">6</td>
+                                        <td id="sete-jan" data-dia="7" data-mes="janeiro">7</td>
+                                        <td id="oito-jan" data-dia="8" data-mes="janeiro">8</td>
+                                        <td id="nove-jan" data-dia="9" data-mes="janeiro">9</td>
+                                        <td id="dez-jan" data-dia="10" data-mes="janeiro">10</td>
+                                        <td id="onze-jan" data-dia="11" data-mes="janeiro">11</td>
+                                        <td id="doze-jan" data-dia="12" data-mes="janeiro">12</td>
+                                    </tr>
+                                    <tr>
+                                        <td id="treze-jan" data-dia="13" data-mes="janeiro">13</td>
+                                        <td id="quatorze-jan" data-dia="14" data-mes="janeiro">14</td>
+                                        <td id="quinze-jan" data-dia="15" data-mes="janeiro">15</td>
+                                        <td id="dezesseis-jan" data-dia="16" data-mes="janeiro">16</td>
+                                        <td id="dezessete-jan" data-dia="17" data-mes="janeiro">17</td>
+                                        <td id="dezoito-jan" data-dia="18" data-mes="janeiro">18</td>
+                                        <td id="dezenove-jan" data-dia="19" data-mes="janeiro">19</td>
+                                    </tr>
+                                    <tr>
+                                        <td id="vinte-jan" data-dia="20" data-mes="janeiro">20</td>
+                                        <td id="vinte-um-jan" data-dia="21" data-mes="janeiro">21</td>
+                                        <td id="vinte-dois-jan" data-dia="22" data-mes="janeiro">22</td>
+                                        <td id="vinte-tres-jan" data-dia="23" data-mes="janeiro">23</td>
+                                        <td id="vinte-quatro-jan" data-dia="24" data-mes="janeiro">24</td>
+                                        <td id="vinte-cinco-jan" data-dia="25" data-mes="janeiro">25</td>
+                                        <td id="vinte-seis-jan" data-dia="26" data-mes="janeiro">26</td>
+                                    </tr>
+                                    <tr>
+                                        <td id="vinte-sete-jan" data-dia="27" data-mes="janeiro">27</td>
+                                        <td id="vinte-oito-jan" data-dia="28" data-mes="janeiro">28</td>
+                                        <td id="vinte-nove-jan" data-dia="29" data-mes="janeiro">29</td>
+                                        <td id="trinta-jan" data-dia="30" data-mes="janeiro">30</td>
+                                        <td id="trinta-e-um-jan" data-dia="31" data-mes="janeiro">31</td>
+                                        <td id="empty"></td>
+                                        <td id="empty"></td>
+                                    </tr>   
+                                        <tr>
+                                            <td id="empty">1</td>
+                                            <td id="empty">2</td>
+                                            <td id="empty">3</td>
+                                            <td id="empty">4</td>
+                                            <td id="empty">5</td>
+                                            <td id="empty">6</td>
+                                            <td id="empty">7</td>
+                                        </tr>
+                                    </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="fevereiro" class="calendar-container">
+                        <div class="calendario">
+                            <div class="doistextos">
+                                <div class="up">
+                                    <div class="year">2025</div>
+                                </div>
+                                <div class="down">
+                                    <div class="left-arrow" id="leftFeb" onclick="switchJan()"></div>
+                                    <div class="month">Fevereiro</div>
+                                    <div class="right-arrow" id="rightFeb" onclick="switchMar()"></div>
+                                </div>
+                            </div>
+                            <div  class="cal">
+                                <table>
+                                    <tr>
+                                        <th>Dom</th>
+                                        <th>Seg</th>
+                                        <th>Ter</th>
+                                        <th>Qua</th>
+                                        <th>Qui</th>
+                                        <th>Sex</th>
+                                        <th>Sab</th>
+                                    </tr>
+                                    <tr>
+                                        <td id="empty"></td>
+                                        <td id="empty"></td>
+                                        <td id="empty"></td>
+                                        <td id="empty"></td>
+                                        <td id="um-fev" data-dia="1" data-mes="fevereiro">1</td>
+                                        <td id="dois-fev" data-dia="2" data-mes="fevereiro">2</td>
+                                        <td id="tres-fev" data-dia="3" data-mes="fevereiro">3</td>
+                                    </tr>
+                                    <tr>
+                                        <td id="quatro-fev" data-dia="4" data-mes="fevereiro">4</td>
+                                        <td id="cinco-fev" data-dia="5" data-mes="fevereiro">5</td>
+                                        <td id="seis-fev" data-dia="6" data-mes="fevereiro">6</td>
+                                        <td id="sete-fev" data-dia="7" data-mes="fevereiro">7</td>
+                                        <td id="oito-fev" data-dia="8" data-mes="fevereiro">8</td>
+                                        <td id="nove-fev" data-dia="9" data-mes="fevereiro">9</td>
+                                        <td id="dez-fev" data-dia="10" data-mes="fevereiro">10</td>
+                                    </tr>
+                                    <tr>
+                                        <td id="onze-fev" data-dia="11" data-mes="fevereiro">11</td>
+                                        <td id="doze-fev" data-dia="12" data-mes="fevereiro">12</td>
+                                        <td id="treze-fev" data-dia="13" data-mes="fevereiro">13</td>
+                                        <td id="quatorze-fev" data-dia="14" data-mes="fevereiro">14</td>
+                                        <td id="quinze-fev" data-dia="15" data-mes="fevereiro">15</td>
+                                        <td id="dezesseis-fev" data-dia="16" data-mes="fevereiro">16</td>
+                                        <td id="dezessete-fev" data-dia="17" data-mes="fevereiro">17</td>
+                                    </tr>
+                                    <tr>
+                                        <td id="dezoito-fev" data-dia="18" data-mes="fevereiro">18</td>
+                                        <td id="dezenove-fev" data-dia="19" data-mes="fevereiro">19</td>
+                                        <td id="vinte-fev" data-dia="20" data-mes="fevereiro">20</td>
+                                        <td id="vinte-um-fev" data-dia="21" data-mes="fevereiro">21</td>
+                                        <td id="vinte-dois-fev" data-dia="22" data-mes="fevereiro">22</td>
+                                        <td id="vinte-tres-fev" data-dia="23" data-mes="fevereiro">23</td>
+                                        <td id="vinte-quatro-fev" data-dia="24" data-mes="fevereiro">24</td>
+                                    </tr>
+                                    <tr>
+                                        <td id="vinte-cinco-fev" data-dia="25" data-mes="fevereiro">25</td>
+                                        <td id="vinte-seis-fev" data-dia="26" data-mes="fevereiro">26</td>
+                                        <td id="vinte-sete-fev" data-dia="27" data-mes="fevereiro">27</td>
+                                        <td id="vinte-oito-fev" data-dia="28" data-mes="fevereiro">28</td>
+                                        <td id="empty"></td>
+                                        <td id="empty"></td>
+                                        <td id="empty"></td>
+                                    </tr>
+                                    <tr>
+                                        <td id="empty">1</td>
+                                        <td id="empty">2</td>
+                                        <td id="empty">3</td>
+                                        <td id="empty">4</td>
+                                        <td id="empty">5</td>
+                                        <td id="empty">6</td>
+                                        <td id="empty">7</td>
+                                    </tr>
+                                </table>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div id="marco" class="calendar-container">
+                        <div class="calendario">
+                            <div class="doistextos">
+                                <div class="up">
+                                    <div class="year">2025</div>
+                                </div>
+                                <div class="down">
+                                    <div class="left-arrow" id="leftMar" onclick="switchMar()"></div>
+                                    <div class="month">Março</div>
+                                    <div class="right-arrow" id="rightMar" onclick="switchMar()"></div>
+                                </div>
+                            </div>
+                            <div  class="cal">
+                                <table>
+                                    <tr>
+                                        <th>Dom</th>
+                                        <th>Seg</th>
+                                        <th>Ter</th>
+                                        <th>Qua</th>
+                                        <th>Qui</th>
+                                        <th>Sex</th>
+                                        <th>Sab</th>
+                                    </tr>
+                                    <tr>
+                                        <td id="empty"></td>
+                                        <td id="empty"></td>
+                                        <td id="empty"></td>
+                                        <td id="empty"></td>
+                                        <td id="um-mar" data-dia="1" data-mes="março">1</td>
+                                        <td id="dois-mar" data-dia="2" data-mes="março">2</td>
+                                        <td id="tres-mar" data-dia="3" data-mes="março">3</td>
+                                    </tr>
+                                    <tr>
+                                        <td id="quatro-mar" data-dia="4" data-mes="março">4</td>
+                                        <td id="cinco-mar" data-dia="5" data-mes="março">5</td>
+                                        <td id="seis-mar" data-dia="6" data-mes="março">6</td>
+                                        <td id="sete-mar" data-dia="7" data-mes="março">7</td>
+                                        <td id="oito-mar" data-dia="8" data-mes="março">8</td>
+                                        <td id="nove-mar" data-dia="9" data-mes="março">9</td>
+                                        <td id="dez-mar" data-dia="10" data-mes="março">10</td>
+                                    </tr>
+                                    <tr>
+                                        <td id="onze-mar" data-dia="11" data-mes="março">11</td>
+                                        <td id="doze-mar" data-dia="12" data-mes="março">12</td>
+                                        <td id="treze-mar" data-dia="13" data-mes="março">13</td>
+                                        <td id="quatorze-mar" data-dia="14" data-mes="março">14</td>
+                                        <td id="quinze-mar" data-dia="15" data-mes="março">15</td>
+                                        <td id="dezesseis-mar" data-dia="16" data-mes="março">16</td>
+                                        <td id="dezessete-mar" data-dia="17" data-mes="março">17</td>
+                                    </tr>
+                                    <tr>
+                                        <td id="dezoito-mar" data-dia="18" data-mes="março">18</td>
+                                        <td id="dezenove-mar" data-dia="19" data-mes="março">19</td>
+                                        <td id="vinte-mar" data-dia="20" data-mes="março">20</td>
+                                        <td id="vinte-um-mar" data-dia="21" data-mes="março">21</td>
+                                        <td id="vinte-dois-mar" data-dia="22" data-mes="março">22</td>
+                                        <td id="vinte-tres-mar" data-dia="23" data-mes="março">23</td>
+                                        <td id="vinte-quatro-mar" data-dia="24" data-mes="março">24</td>
+                                    </tr>
+                                    <tr>
+                                        <td id="vinte-cinco-mar" data-dia="25" data-mes="março">25</td>
+                                        <td id="vinte-seis-mar" data-dia="26" data-mes="março">26</td>
+                                        <td id="vinte-sete-mar" data-dia="27" data-mes="março">27</td>
+                                        <td id="vinte-oito-mar" data-dia="28" data-mes="março">28</td>
+                                        <td id="vinte-nove-mar" data-dia="29" data-mes="março">29</td>
+                                        <td id="trinta-mar" data-dia="30" data-mes="março">30</td>
+                                        <td id="trinta-e-um-mar" data-dia="31" data-mes="março">31</td>
+                                    </tr>
+                                        <td id="empty">1</td>
+                                        <td id="empty"></td>
+                                        <td id="empty"></td>
+                                        <td id="empty"></td>
+                                        <td id="empty"></td>
+                                        <td id="empty"></td>
+                                        <td id="empty"></td>
+                                    </tr>
+                                </table>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div id="abril" class="calendar-container">
+                        <div class="calendario">
+                            <div class="doistextos">
+                                <div class="up">
+                                    <div class="year">2025</div>
+                                </div>
+                                <div class="down">
+                                    <div class="left-arrow" id="leftApr" onclick="switchApr()"></div>
+                                    <div class="month">Abril</div>
+                                    <div class="right-arrow" id="rightApr" onclick="switchApr()"></div>
+                                </div>
+                            </div>
+                            <div  class="cal">
+                                <table>
+                                    <tr>
+                                        <th>Dom</th>
+                                        <th>Seg</th>
+                                        <th>Ter</th>
+                                        <th>Qua</th>
+                                        <th>Qui</th>
+                                        <th>Sex</th>
+                                        <th>Sab</th>
+                                    </tr>
+                                    <tr>
+                                        <td id="empty"></td>
+                                        <td id="empty"></td>
+                                        <td id="empty"></td>
+                                        <td id="empty"></td>
+                                        <td id="um-abril" data-dia="1" data-mes="abril">1</td>
+                                        <td id="dois-abril" data-dia="2" data-mes="abril">2</td>
+                                        <td id="tres-abril" data-dia="3" data-mes="abril">3</td>
+                                    </tr>
+                                    <tr>
+                                        <td id="quatro-abril" data-dia="4" data-mes="abril">4</td>
+                                        <td id="cinco-abril" data-dia="5" data-mes="abril">5</td>
+                                        <td id="seis-abril" data-dia="6" data-mes="abril">6</td>
+                                        <td id="sete-abril" data-dia="7" data-mes="abril">7</td>
+                                        <td id="oito-abril" data-dia="8" data-mes="abril">8</td>
+                                        <td id="nove-abril" data-dia="9" data-mes="abril">9</td>
+                                        <td id="dez-abril" data-dia="10" data-mes="abril">10</td>
+                                    </tr>
+                                    <tr>
+                                        <td id="onze-abril" data-dia="11" data-mes="abril">11</td>
+                                        <td id="doze-abril" data-dia="12" data-mes="abril">12</td>
+                                        <td id="treze-abril" data-dia="13" data-mes="abril">13</td>
+                                        <td id="quatorze-abril" data-dia="14" data-mes="abril">14</td>
+                                        <td id="quinze-abril" data-dia="15" data-mes="abril">15</td>
+                                        <td id="dezesseis-abril" data-dia="16" data-mes="abril">16</td>
+                                        <td id="dezessete-abril" data-dia="17" data-mes="abril">17</td>
+                                    </tr>
+                                    <tr>
+                                        <td id="dezoito-abril" data-dia="18" data-mes="abril">18</td>
+                                        <td id="dezenove-abril" data-dia="19" data-mes="abril">19</td>
+                                        <td id="vinte-abril" data-dia="20" data-mes="abril">20</td>
+                                        <td id="vinte-um-abril" data-dia="21" data-mes="abril">21</td>
+                                        <td id="vinte-dois-abril" data-dia="22" data-mes="abril">22</td>
+                                        <td id="vinte-tres-abril" data-dia="23" data-mes="abril">23</td>
+                                        <td id="vinte-quatro-abril" data-dia="24" data-mes="abril">24</td>
+                                    </tr>
+                                    <tr>
+                                        <td id="vinte-cinco-abril" data-dia="25" data-mes="abril">25</td>
+                                        <td id="vinte-seis-abril" data-dia="26" data-mes="abril">26</td>
+                                        <td id="vinte-sete-abril" data-dia="27" data-mes="abril">27</td>
+                                        <td id="vinte-oito-abril" data-dia="28" data-mes="abril">28</td>
+                                        <td id="vinte-nove-abril" data-dia="29" data-mes="abril">29</td>
+                                        <td id="trinta-abril" data-dia="30" data-mes="abril">30</td>
+                                        <td id="empty"></td>
+                                    </tr>
+                                    <tr>
+                                        <td id="empty">1</td>
+                                        <td id="empty">2</td>
+                                        <td id="empty">3</td>
+                                        <td id="empty">4</td>
+                                        <td id="empty">5</td>
+                                        <td id="empty">6</td>
+                                        <td id="empty">7</td>
+
+                                    </tr>
+                                </table>
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="below-text">
+                        Problemas com agendamento? <a href="../contato/index.html">Entre em contato</a> . 
+                    </div>
+                </div>
+                <a class="button" onclick="mesa()">Continue</a>
+            </div>
+        </div>
+        
+        </div>
+        <script src="reserva_dia.js"></script>
+</body>
+
+</html>

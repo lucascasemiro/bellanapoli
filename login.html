@@ -1,0 +1,47 @@
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="container">
+        
+        
+        
+        <div class="content">
+            <div class="data">
+                
+                <h2 class="titulo">Login</h2>
+                
+                
+                
+                <div class="inputs">
+                    <div class="modal-pw" id="modaler">
+                        Email ous senha incorretos.
+                    </div>
+                    <input class="email" placeholder="Email" type="email" id="emailLogin" required autocomplete="off">
+                    <input onclick="closeModal()" class="password" placeholder="Senha" type="password" id="passwordLogin" required autocomplete="off">
+                    <label onclick="register()" class="forgot">Não possui cadastro? <a style="text-decoration:underline; margin-left: 1%;">Registre-se</a></label>
+                    <div class="submit-c"><button class="submit" id="submit" onclick="submit()">Entrar</button></div>
+                </div>
+                
+            </div>
+            
+        </div>
+        <div class="img">
+            <div class="back-button" onclick="retorne()">
+                <img class="arrow"src="https://i.imgur.com/Ykxn1L4.png">
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <script src="login.js"></script>
+</body>
+
+</html>
