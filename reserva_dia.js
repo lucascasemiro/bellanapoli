@@ -106,7 +106,7 @@ document.querySelectorAll('.cal td[data-dia]').forEach(function(cell) {
 });
 
 function voltar(){
-    window.location.href = "../inicio/index.html"; 
+    window.location.href = "index.html"; 
 }
 
 function mesa() {
