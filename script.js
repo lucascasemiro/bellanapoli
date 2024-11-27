@@ -46,33 +46,33 @@ function reserva() {
 
    if (!usuarioLogado) {
 
-      window.location.href = '../login/login.html';
+      window.location.href = 'login.html';
    } else {
-      window.location.href = '../reserva_dia/reserva_dia.html';
+      window.location.href = 'reserva_dia.html';
    }
 }
 
 
 function cadastro() {
-   window.location.href = '../cadastro/cadastro.html';
+   window.location.href = 'cadastro.html';
 }
 
 
 function login() {
-   window.location.href = '../login/login.html';
+   window.location.href = 'login.html';
 }
 
 
 function contato() {
-   window.location.href = '../contato/contato.html';
+   window.location.href = 'contato.html';
 }
 
 
 
 
 function inicio() {
-   window.location.href = '../inicio/index.html';  
+   window.location.href = 'index.html';  
 }
 function redirecionar() {
-   window.location.href = '../reserva_dia/reserva_dia.html';  
+   window.location.href = 'reserva_dia.html';  
 }
