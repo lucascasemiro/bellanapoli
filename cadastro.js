@@ -61,7 +61,7 @@ function submit() {
     }
   });
   // Manda pro login
-  window.location.href = '../login/login.html';
+  window.location.href = 'login.html';
 }
 
 // abre e fecha de modal
