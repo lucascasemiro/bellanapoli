@@ -43,14 +43,14 @@ function salvarMesasSelecionadas() {
 }
 
 function voltar() {
-    window.location.href = "../reserva_dia/reserva_dia.html";
+    window.location.href = "reserva_dia.html";
 }
 
 function comida() {
 
     if (mesasSelecionadas.length > 0) {
-        window.location.href = "../reserva_comida/reserva_comida.html";
+        window.location.href = "reserva_comida.html";
     } else {
-        window.location.href = "../reserva_mesa/reserva_mesa.html";
+        window.location.href = "reserva_mesa.html";
     }
 }
