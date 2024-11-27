@@ -98,5 +98,5 @@ function closeModalEmail() {
 }
 
 function retorne() {
-  window.location.href = '../inicio/index.html';
+  window.location.href = 'index.html';
 }
