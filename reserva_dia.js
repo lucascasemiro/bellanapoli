@@ -112,8 +112,8 @@ function voltar(){
 function mesa() {
     let reservas = JSON.parse(localStorage.getItem('reservas')) || {}; 
     if (Object.keys(reservas).length > 0) {
-        window.location.href = "../reserva_mesa/reserva_mesa.html"; 
+        window.location.href = "reserva_mesa.html"; 
     } else {
-        window.location.href = "../reserva_dia/reserva_dia.html"; 
+        window.location.href = "reserva_dia.html"; 
     }
 }
