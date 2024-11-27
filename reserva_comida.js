@@ -153,7 +153,7 @@ const defaultItems = [
     {
         name: "Soda Italiana",
         price: "28.00",
-        img: "https://i.pinimg.com/736x/3e/a8/c9/3ea8c9ce3911dff7a88cb8539cd8408c.jpg",
+        img: "https://img.freepik.com/free-photo/cold-lime-apple-drink_140725-7504.jpg",
         desc: "Uma bebida refrescante e leve, feita com xarope de frutas frescas e água com gás. A Soda Italiana combina o doce do xarope com a leveza da água com gás.",
         select: "o6"
     },
