@@ -422,7 +422,7 @@ function closeBookingInfo() {
 }
 
 function back(){
-   window.location.href = '../reserva_mesa/reserva_mesa.html'
+   window.location.href = 'reserva_mesa.html'
 }
 
 function bookingSuccess() {
@@ -434,6 +434,6 @@ function bookingSuccess() {
 
 function backHome(){
 setTimeout(() => {
-   window.location.href = '../inicio/index.html'
+   window.location.href = 'index.html'
 },700);
 }
